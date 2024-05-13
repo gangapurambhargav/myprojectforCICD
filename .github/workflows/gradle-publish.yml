@@ -21,6 +21,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - uses: actions/setup-java@v2
+      with:
+        java-version: '11'  # Adjust the Java version as per your requirements
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
